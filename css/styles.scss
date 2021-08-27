@@ -15,8 +15,27 @@ body{
 .lana{
     width:30px
 }
+
+.logo{   
+  height: 30rem;
+  width: 60rem;
+  margin-left: 5rem;
+ margin-top: 2rem;
+ padding-top: 2 rem;
+ padding-bottom: 2rem;
+}
+@media (max-width: 767px ){
+  .logo__min{
+    height: 30rem;
+    width: 60rem;
+   margin-top: 2rem;
+   padding-top: 2 rem;
+   padding-bottom: 2rem;
+  }
+  }
+
 .section_position{
-padding-left: $padding*11;
+margin-left: $padding*7;
 }
 
 .lana__tamano{
@@ -25,9 +44,12 @@ padding-left: $padding*11;
 }
 
 .nav-item__hover:hover{
-  height: 5rem;
-  border-radius: 6px;
+  border-radius: 3px;
 box-shadow: $boxshadow
+}
+
+.carousel__home{
+  border-radius: 10px;
 }
 .intro{
   font-weight: 600;
@@ -73,23 +95,31 @@ box-shadow: $boxshadow
 font-weight: bold;
 text-align: center;}
 
-.carousel__position{
-  padding-left: $padding*10;
-}
-.carousel-item__size{
-width: 30rem;
-}
+
+@media (min-width: 768px) {
+  .carousel__bordes{
+    border-radius: 5px;
+    width: 70%;
+    height: 700px;
+  padding: $padding;
+  border: 3px solid #000;
+  }
+  }
+  
+  @media (max-width: 767px ){
+    .carousel__min{
+      width: 80%;
+      height: 80%;
+      padding: 10px;
+  border: 3px solid #000;
+  margin-left: $padding;
+    }
+    }
 
 
 
- .logo{   
-   height: 30rem;
-   width: 60rem;
-  margin-top: 2rem;
-  padding-top: 2 rem;
-  padding-bottom: 2rem;
- }
- 
+
+
 
  .bg-light{
  
@@ -118,10 +148,11 @@ width: 30rem;
 box-shadow: $boxshadow;
  }
  .footer-imagen{
-   width: 100%
- }
+width: 100%;
+  }
  
  /* Catalogo*/
+
 
 .carrito{
   padding: $padding/2;
@@ -210,5 +241,8 @@ padding: $padding
  transform: rotateZ(15deg);
    margin: 7rem;
    width: 50rem;
+ }
+ .boton__position{
+   margin-left: $padding;
  }
 

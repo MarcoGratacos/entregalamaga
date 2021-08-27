@@ -15,8 +15,27 @@ body .lana {
   width: 30px;
 }
 
+body .logo {
+  height: 30rem;
+  width: 60rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  padding-top: 2 rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  body .logo__min {
+    height: 30rem;
+    width: 60rem;
+    margin-top: 2rem;
+    padding-top: 2 rem;
+    padding-bottom: 2rem;
+  }
+}
+
 body .section_position {
-  padding-left: 22rem;
+  margin-left: 14rem;
 }
 
 body .lana__tamano {
@@ -25,10 +44,13 @@ body .lana__tamano {
 }
 
 body .nav-item__hover:hover {
-  height: 5rem;
-  border-radius: 6px;
+  border-radius: 3px;
   -webkit-box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.5);
+}
+
+body .carousel__home {
+  border-radius: 10px;
 }
 
 body .intro {
@@ -81,20 +103,24 @@ body .footer {
   text-align: center;
 }
 
-.carousel__position {
-  padding-left: 20rem;
+@media (min-width: 768px) {
+  .carousel__bordes {
+    border-radius: 5px;
+    width: 70%;
+    height: 700px;
+    padding: 2rem;
+    border: 3px solid #000;
+  }
 }
 
-.carousel-item__size {
-  width: 30rem;
-}
-
-.logo {
-  height: 30rem;
-  width: 60rem;
-  margin-top: 2rem;
-  padding-top: 2 rem;
-  padding-bottom: 2rem;
+@media (max-width: 767px) {
+  .carousel__min {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    border: 3px solid #000;
+    margin-left: 2rem;
+  }
 }
 
 .bg-light {
@@ -215,5 +241,9 @@ body .footer {
           transform: rotateZ(15deg);
   margin: 7rem;
   width: 50rem;
+}
+
+.boton__position {
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

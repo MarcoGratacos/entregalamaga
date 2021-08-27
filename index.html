@@ -21,7 +21,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>La Maga Amigurumis</title>
   </head>
   <body>
@@ -29,11 +29,11 @@
   <div class="container" >
 
     <div class="row"> 
-        <img  class="logo col -12" src="imagenes/portada.png" alt="Logo de La Maga" />
+        <img  class="logo col-12 logo__min" src="imagenes/portada.png" alt="Logo de La Maga" />
       </div>
       
       <div class="row">
-        <div class="col-3"></div>
+        <div class="col-3 col-xs-12"></div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light row  col-6 align-items-center">    
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,14 +46,14 @@
                 <a class="nav-link active" aria-current="page" href="index.html"> <img class="lana" src="imagenes/lana.ico" alt="lana">   Home</a>
               </li>
               <li class="nav-item nav-item__hover">
-                <a class="nav-link active" aria-current="page" href="catalogo.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Catalogo</a>
+                <a class="nav-link active" aria-current="page" href="/html/catalogo.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Catalogo</a>
               </li> <li class="nav-item nav-item__hover">
-                <a class="nav-link active" aria-current="page" href="galeria.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Galeria</a>
+                <a class="nav-link active" aria-current="page" href="html/galeria.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Galeria</a>
               </li> <li class="nav-item nav-item__hover">
-                <a class="nav-link active" aria-current="page" href="quienessomos.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Nosotros</a>
+                <a class="nav-link active" aria-current="page" href="html/quienessomos.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Nosotros</a>
               </li>
                <li class="nav-item nav-item__hover">
-                <a class="nav-link active" aria-current="page" href="contacto.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Contacto</a>
+                <a class="nav-link active" aria-current="page" href="html/contacto.html">  <img class="lana" src="imagenes/lana.ico" alt="lana">Contacto</a>
               </li>
             </ul>
       </nav>
@@ -68,16 +68,19 @@
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img  src="imagenes/lana1.jpg" class="d-block w-50 h-50" alt="conejo tejido artesanal">
+            <img  src="imagenes/carousel1.jpg" class="d-block w-75 h-75 carousel__home" alt="lanas y pasatiempos">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/lana2.jpg" class="d-block w-50  h-50" alt="lanas y pasatiempos">
+            <img src="imagenes/carousel2.jpg" class="d-block w-75 h-75 carousel__home" alt="composicion de lana y tejidos">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/lana3.jpg" class="d-block w-50 h-50" alt="composicion de lana y tejidos">
+            <img src="imagenes/carousel3.jpg" class="d-block w-75 h-75 carousel__home" alt="lanas importadas">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/lana4.jpg" class="d-block w-50 h-50" alt="lanas importadas">
+            <img src="imagenes/carousel4.jpg" class="d-block w-75 h-75 carousel__home" alt="lanas importadas">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/carousel5.jpg" class="d-block w-75 h-75 carousel__home" alt="lanas importadas">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -89,7 +92,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
   </section>
 
     <div id="youtube">
@@ -139,7 +141,7 @@
 <div class="footer row">
       <footer>
         <hr>
-        <img class="footer-imagen" src="imagenes/footer.png" alt="footer">
+        <img class="footer-imagen portada__radius" src="imagenes/footer.png" alt="footer">
         <a href="http://facebook.com">
         <img class="redes" src="imagenes/face.png" alt="facebook" /></a>
         <a href="http://instagram.com">
